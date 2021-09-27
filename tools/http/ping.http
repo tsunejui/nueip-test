@@ -1,0 +1,9 @@
+
+@auth = Authorization: Bearer xxx
+
+
+GET http://localhost:8080/pong
+content-type: application/json
+{{auth}}
+
+{}

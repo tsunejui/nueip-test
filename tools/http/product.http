@@ -1,0 +1,55 @@
+
+@auth = Authorization: Bearer xxx
+
+
+GET http://localhost:8080/products
+content-type: application/json
+
+{}
+
+###
+
+GET http://localhost:8080/product/1
+content-type: application/json
+
+{}
+
+###
+
+POST http://localhost:8080/product
+content-type: application/json
+{{auth}}
+
+{
+    "name": "Test Product",
+    "cost": 50,
+    "price": 100,
+    "description": "test",
+    "state": 1,
+    "start_time": "2021-09-28 08:00:20",
+    "end_time": "2021-09-29 19:03:00"
+}
+
+###
+
+PUT http://localhost:8080/product/1
+content-type: application/json
+{{auth}}
+
+{
+    "name": "Test Product 2",
+    "cost": 70,
+    "price": 120,
+    "description": "",
+    "state": 0,
+    "start_time": "2021-09-30 08:00:20",
+    "end_time": "2021-09-30 19:03:00"
+}
+
+###
+
+DELETE http://localhost:8080/product/1
+content-type: application/json
+{{auth}}
+
+{}

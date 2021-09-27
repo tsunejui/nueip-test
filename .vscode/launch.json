@@ -1,0 +1,23 @@
+{
+    "version": "0.0.0",
+    "configurations": [
+        {
+            "name": "API Server",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceRoot}/cmd/api-server",
+            "cwd": "${workspaceRoot}",
+            "args": [],
+            "env": {
+                "LISTEN_PORT": 8080,
+                "DB_NAME": "nueip",
+                "DB_HOST": "localhost",
+                "DB_PORT": "5432",
+                "DB_USERNAME": "postgres",
+                "DB_PASSWORD": "postgres",
+            },
+            "showLog": true
+        }
+    ]
+}
