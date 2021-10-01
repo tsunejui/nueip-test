@@ -12,5 +12,5 @@ func main() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	os.Exit(1)
+	os.Exit()
 }
